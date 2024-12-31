@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>技术支持</title>
+    <title>技术支持 - Jkcreate</title>
     <style>
         body {
             font-family: 'Microsoft YaHei', sans-serif;
@@ -21,37 +21,79 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
+        h1, h2 {
             color: #2c3e50;
             text-align: center;
             margin-bottom: 30px;
         }
 
-        .contact-info {
+        .contact-info, .social-media {
             background-color: #f8f9fa;
             padding: 20px;
             border-radius: 6px;
             margin-top: 20px;
         }
 
-        .contact-info p {
+        .contact-info p, .social-media p {
             margin: 10px 0;
             color: #495057;
         }
 
-        .email {
+        .email, .social-link {
             color: #007bff;
             text-decoration: none;
+            transition: all 0.3s ease;
         }
 
-        .email:hover {
+        .email:hover, .social-link:hover {
             text-decoration: underline;
+            color: #0056b3;
+        }
+
+        .social-media {
+            text-align: center;
+            background-color: #fff0f5; /* 小红书粉色背景 */
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff2442; /* 小红书红色 */
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e60023;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>欢迎来到技术支持中心</h1>
+        
+        <div class="social-media">
+            <h2>关注我的社交媒体</h2>
+            <p>
+                <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书" class="social-icon">
+                小红书：<a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="social-link" target="_blank">@Jkcreate</a>
+            </p>
+            <p>每天都会把苹果圆环合上的数码博主</p>
+            <a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="btn" target="_blank">
+                访问我的小红书主页
+            </a>
+        </div>
         
         <div class="contact-info">
             <h2>联系方式</h2>
