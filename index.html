@@ -139,6 +139,59 @@
             color: #2c3e50;
             border-bottom: 3px solid #007bff;
         }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .profile-info {
+            max-width: 500px;
+            margin: 0 auto 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .info-item:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            transform: translateX(5px);
+        }
+
+        .info-item .emoji {
+            font-size: 1.2em;
+            margin-right: 15px;
+            min-width: 25px;
+        }
+
+        .info-item .text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            font-size: 1.1em;
+            padding: 12px 30px;
+        }
     </style>
 </head>
 <body>
@@ -153,11 +206,32 @@
 
         <div id="social" class="social-media">
             <h2>关注我的社交媒体</h2>
-            <p>
+            <div class="profile-header">
                 <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书" class="social-icon">
-                小红书：<a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="social-link" target="_blank">@Jkcreate</a>
-            </p>
-            <p>每天都会把苹果圆环合上的数码博主</p>
+                <a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="social-link" target="_blank">@Jkcreate</a>
+            </div>
+            <div class="profile-info">
+                <div class="info-item">
+                    <span class="emoji">🍎</span>
+                    <span class="text">资深果粉</span>
+                </div>
+                <div class="info-item">
+                    <span class="emoji">💻</span>
+                    <span class="text">独立开发者（Cursor）</span>
+                </div>
+                <div class="info-item">
+                    <span class="emoji">🔧</span>
+                    <span class="text">3D打印入门中、Sharp 3D学习中</span>
+                </div>
+                <div class="info-item">
+                    <span class="emoji">🛒</span>
+                    <span class="text">小红书店主（卖一些专利好物）</span>
+                </div>
+                <div class="info-item">
+                    <span class="emoji">📹</span>
+                    <span class="text">视觉中国签约摄影师</span>
+                </div>
+            </div>
             <a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="btn" target="_blank">
                 访问我的小红书主页
             </a>
