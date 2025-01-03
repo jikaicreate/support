@@ -77,13 +77,57 @@
             background-color: #e60023;
             text-decoration: none;
         }
+
+        .privacy-policy {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-policy h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .privacy-policy section {
+            margin: 20px 0;
+        }
+
+        .privacy-policy h3 {
+            color: #34495e;
+            margin: 15px 0;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>欢迎来到技术支持中心</h1>
         
-        <div class="social-media">
+        <div class="nav-links">
+            <a href="#social">社交媒体</a>
+            <a href="#contact">联系方式</a>
+            <a href="#privacy">隐私政策</a>
+        </div>
+
+        <div id="social" class="social-media">
             <h2>关注我的社交媒体</h2>
             <p>
                 <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书" class="social-icon">
@@ -95,11 +139,52 @@
             </a>
         </div>
         
-        <div class="contact-info">
+        <div id="contact" class="contact-info">
             <h2>联系方式</h2>
             <p>如果您遇到任何技术问题，请随时与我们联系：</p>
             <p>📧 邮箱：<a href="mailto:hellojikai@163.com" class="email">hellojikai@163.com</a></p>
             <p>⏰ 工作时间：周一至周五 9:00-18:00</p>
+        </div>
+
+        <div id="privacy" class="privacy-policy">
+            <h2>隐私政策</h2>
+            <p>最后更新日期：2024年1月31日</p>
+
+            <section>
+                <h3>简介</h3>
+                <p>感谢您使用我们的应用。我们高度重视您的隐私保护，并承诺采取合理措施保护您的个人信息。本隐私政策旨在说明我们的数据处理方式。</p>
+            </section>
+
+            <section>
+                <h3>信息收集</h3>
+                <p>我们的应用是一款工具类应用，我们不会收集、存储或传输任何用户个人信息。应用的所有功能都在本地设备上运行，无需连接到外部服务器。</p>
+            </section>
+
+            <section>
+                <h3>数据使用</h3>
+                <p>由于我们不收集任何用户数据，因此也不会有任何数据使用、分享或转让的情况。您在使用我们的应用时产生的所有数据都将保存在您的设备本地。</p>
+            </section>
+
+            <section>
+                <h3>第三方服务</h3>
+                <p>我们的应用不包含任何第三方服务或分析工具。我们不会与任何第三方共享您的信息。</p>
+            </section>
+
+            <section>
+                <h3>儿童隐私</h3>
+                <p>我们的服务面向所有年龄段的用户。我们不会有意收集任何未成年人的个人信息。</p>
+            </section>
+
+            <section>
+                <h3>隐私政策更新</h3>
+                <p>我们可能会不时更新本隐私政策。更新后的版本将在本页面上发布，并注明更新日期。</p>
+            </section>
+
+            <section>
+                <h3>联系我们</h3>
+                <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+                <p>📧 邮箱：<a href="mailto:hellojikai@163.com" class="email">hellojikai@163.com</a></p>
+            </section>
         </div>
     </div>
 </body>
