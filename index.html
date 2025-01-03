@@ -84,12 +84,15 @@
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e1e4e8;
         }
 
         .privacy-policy h2 {
             color: #2c3e50;
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #007bff;
             padding-bottom: 10px;
+            font-size: 24px;
+            text-align: left;
         }
 
         .privacy-policy section {
@@ -104,16 +107,37 @@
         .nav-links {
             text-align: center;
             margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
 
         .nav-links a {
-            margin: 0 10px;
+            margin: 0 15px;
             color: #007bff;
             text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
         }
 
         .nav-links a:hover {
-            text-decoration: underline;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+
+        .section-title {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
+            border-bottom: 3px solid #007bff;
         }
     </style>
 </head>
@@ -144,6 +168,10 @@
             <p>如果您遇到任何技术问题，请随时与我们联系：</p>
             <p>📧 邮箱：<a href="mailto:hellojikai@163.com" class="email">hellojikai@163.com</a></p>
             <p>⏰ 工作时间：周一至周五 9:00-18:00</p>
+        </div>
+
+        <div class="section-title">
+            📋 隐私政策
         </div>
 
         <div id="privacy" class="privacy-policy">
