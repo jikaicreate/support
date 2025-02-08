@@ -275,6 +275,47 @@
             background-color: #0056b3;
             transform: scale(1.05);
         }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+
+        .social-platform {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .social-platform:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .social-link {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .social-link:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
@@ -290,10 +331,21 @@
 
         <div id="social" class="social-media">
             <h2>关注我的社交媒体</h2>
-            <div class="profile-header">
-                <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书" class="social-icon">
-                <a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="social-link" target="_blank">@Jkcreate</a>
+            <div class="social-links">
+                <div class="social-platform">
+                    <img src="https://www.xiaohongshu.com/favicon.ico" alt="小红书" class="social-icon">
+                    <a href="https://www.xiaohongshu.com/user/profile/5658311a50c4b4490f520d6f" class="social-link" target="_blank">小红书</a>
+                </div>
+                <div class="social-platform">
+                    <img src="https://www.bilibili.com/favicon.ico" alt="哔哩哔哩" class="social-icon">
+                    <a href="https://space.bilibili.com/650632950" class="social-link" target="_blank">哔哩哔哩</a>
+                </div>
+                <div class="social-platform">
+                    <img src="https://www.youtube.com/favicon.ico" alt="YouTube" class="social-icon">
+                    <a href="https://www.youtube.com/@jkcreate960/videos" class="social-link" target="_blank">YouTube</a>
+                </div>
             </div>
+
             <div class="profile-info">
                 <div class="info-item">
                     <span class="emoji">🍎</span>
@@ -377,7 +429,7 @@
             <h2>我的App作品</h2>
             
             <div class="app-card">
-                <img src="images/bear-logo.png" alt="小熊转盘" class="app-icon">
+                <img src="./images/bear-logo.png" alt="小熊转盘" class="app-icon">
                 <div class="app-info">
                     <div class="app-name">小熊转盘</div>
                     <div class="app-description">让选择变得更加简单有趣！基于位置的智能决策助手，帮你解决"吃什么"、"去哪玩"等选择困难问题。适合家庭日常选择、亲子互动、餐食决策等多种场景。</div>
@@ -393,7 +445,7 @@
             </div>
 
             <div class="app-card">
-                <img src="images/text-logo.png" alt="文图" class="app-icon">
+                <img src="./images/text-logo.png" alt="文图" class="app-icon">
                 <div class="app-info">
                     <div class="app-name">文图</div>
                     <div class="app-description">AI对话内容转图片工具，轻松将AI回答转换成精美的长图或3:4比例的图片，完美适配社交媒体分享需求。让分享AI对话变得更加优雅简单。</div>
