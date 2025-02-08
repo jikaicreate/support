@@ -192,6 +192,87 @@
             font-size: 1.1em;
             padding: 12px 30px;
         }
+
+        .apps-section {
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .app-card {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin-right: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-info {
+            flex: 1;
+        }
+
+        .app-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .app-description {
+            color: #666;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .app-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .app-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        .app-store-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            background-color: #007AFF;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .app-store-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -202,6 +283,7 @@
             <a href="#social">社交媒体</a>
             <a href="#contact">联系方式</a>
             <a href="#privacy">隐私政策</a>
+            <a href="#apps">我的作品</a>
         </div>
 
         <div id="social" class="social-media">
@@ -287,6 +369,42 @@
                 <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
                 <p>📧 邮箱：<a href="mailto:hellojikai@163.com" class="email">hellojikai@163.com</a></p>
             </section>
+        </div>
+
+        <div id="apps" class="apps-section">
+            <h2>我的App作品</h2>
+            
+            <div class="app-card">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/your-image-url/小熊转盘.png" alt="小熊转盘" class="app-icon">
+                <div class="app-info">
+                    <div class="app-name">小熊转盘</div>
+                    <div class="app-description">让选择变得更加简单有趣！基于位置的智能决策助手，帮你解决"吃什么"、"去哪玩"等选择困难问题。适合家庭日常选择、亲子互动、餐食决策等多种场景。</div>
+                    <div class="app-meta">
+                        <span class="app-badge">免费</span>
+                        <span class="app-badge">工具</span>
+                        <span class="app-badge">支持中文</span>
+                    </div>
+                    <a href="https://apps.apple.com/us/app/%E5%B0%8F%E7%86%8A%E8%BD%AC%E7%9B%98/id6740112784" class="app-store-button" target="_blank">
+                        在 App Store 中查看
+                    </a>
+                </div>
+            </div>
+
+            <div class="app-card">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/your-image-url/文图.png" alt="文图" class="app-icon">
+                <div class="app-info">
+                    <div class="app-name">文图</div>
+                    <div class="app-description">AI对话内容转图片工具，轻松将AI回答转换成精美的长图或3:4比例的图片，完美适配社交媒体分享需求。让分享AI对话变得更加优雅简单。</div>
+                    <div class="app-meta">
+                        <span class="app-badge">¥6.99</span>
+                        <span class="app-badge">效率</span>
+                        <span class="app-badge">支持中文</span>
+                    </div>
+                    <a href="https://apps.apple.com/us/app/%E6%96%87%E5%9B%BE/id6741164336" class="app-store-button" target="_blank">
+                        在 App Store 中查看
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
