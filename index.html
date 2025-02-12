@@ -75,13 +75,19 @@
             margin: 80px 0;
         }
 
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
         .app-card {
             background: #fff;
             border-radius: 18px;
-            padding: 30px;
-            margin: 30px 0;
+            padding: 24px;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -91,28 +97,33 @@
         }
 
         .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-            margin-right: 30px;
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin: 0 auto 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .app-info {
-            flex: 1;
+            text-align: center;
         }
 
         .app-name {
             font-size: 24px;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
         .app-description {
-            font-size: 17px;
+            font-size: 15px;
             color: #86868b;
             line-height: 1.5;
             margin-bottom: 20px;
+            /* 限制文本行数 */
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
 
         .app-meta {
@@ -251,51 +262,53 @@
         <div id="apps" class="apps-section">
             <h2>我的App作品</h2>
             
-            <div class="app-card">
-                <img src="./images/bear-logo.png" alt="小熊转盘" class="app-icon">
-                <div class="app-info">
-                    <div class="app-name">小熊转盘</div>
-                    <div class="app-description">让选择变得更加简单有趣！基于位置的智能决策助手，帮你解决"吃什么"、"去哪玩"等选择困难问题。适合家庭日常选择、亲子互动、餐食决策等多种场景。</div>
-                    <div class="app-meta">
-                        <span class="app-badge">免费</span>
-                        <span class="app-badge">工具</span>
-                        <span class="app-badge">支持中文</span>
+            <div class="apps-grid">
+                <div class="app-card">
+                    <img src="./images/bear-logo.png" alt="小熊转盘" class="app-icon">
+                    <div class="app-info">
+                        <div class="app-name">小熊转盘</div>
+                        <div class="app-description">让选择变得更加简单有趣！基于位置的智能决策助手，帮你解决"吃什么"、"去哪玩"等选择困难问题。适合家庭日常选择、亲子互动、餐食决策等多种场景。</div>
+                        <div class="app-meta">
+                            <span class="app-badge">免费</span>
+                            <span class="app-badge">工具</span>
+                            <span class="app-badge">支持中文</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/%E5%B0%8F%E7%86%8A%E8%BD%AC%E7%9B%98/id6740112784" class="app-store-button" target="_blank">
+                            在 App Store 中查看
+                        </a>
                     </div>
-                    <a href="https://apps.apple.com/us/app/%E5%B0%8F%E7%86%8A%E8%BD%AC%E7%9B%98/id6740112784" class="app-store-button" target="_blank">
-                        在 App Store 中查看
-                    </a>
                 </div>
-            </div>
 
-            <div class="app-card">
-                <img src="./images/text-logo.png" alt="文图" class="app-icon">
-                <div class="app-info">
-                    <div class="app-name">文图</div>
-                    <div class="app-description">AI对话内容转图片工具，轻松将AI回答转换成精美的长图或3:4比例的图片，完美适配社交媒体分享需求。让分享AI对话变得更加优雅简单。</div>
-                    <div class="app-meta">
-                        <span class="app-badge">¥6.99</span>
-                        <span class="app-badge">效率</span>
-                        <span class="app-badge">支持中文</span>
+                <div class="app-card">
+                    <img src="./images/text-logo.png" alt="文图" class="app-icon">
+                    <div class="app-info">
+                        <div class="app-name">文图</div>
+                        <div class="app-description">AI对话内容转图片工具，轻松将AI回答转换成精美的长图或3:4比例的图片，完美适配社交媒体分享需求。让分享AI对话变得更加优雅简单。</div>
+                        <div class="app-meta">
+                            <span class="app-badge">¥6.99</span>
+                            <span class="app-badge">效率</span>
+                            <span class="app-badge">支持中文</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/%E6%96%87%E5%9B%BE/id6741164336" class="app-store-button" target="_blank">
+                            在 App Store 中查看
+                        </a>
                     </div>
-                    <a href="https://apps.apple.com/us/app/%E6%96%87%E5%9B%BE/id6741164336" class="app-store-button" target="_blank">
-                        在 App Store 中查看
-                    </a>
                 </div>
-            </div>
 
-            <div class="app-card">
-                <img src="./images/camera-logo.png" alt="素材相机" class="app-icon">
-                <div class="app-info">
-                    <div class="app-name">素材相机</div>
-                    <div class="app-description">一键拍摄，选择相簿直接调用苹果原生相机拍摄，照片/视频自动存入对应主题相簿。深度整合iOS相册系统，拍摄素材即时归档，保持苹果原生操作体验。告别手动整理，摄影师/博主/创作者素材管理效率大大提升。</div>
-                    <div class="app-meta">
-                        <span class="app-badge">免费</span>
-                        <span class="app-badge">效率</span>
-                        <span class="app-badge">支持中文</span>
+                <div class="app-card">
+                    <img src="./images/camera-logo.png" alt="素材相机" class="app-icon">
+                    <div class="app-info">
+                        <div class="app-name">素材相机</div>
+                        <div class="app-description">一键拍摄，选择相簿直接调用苹果原生相机拍摄，照片/视频自动存入对应主题相簿。深度整合iOS相册系统，拍摄素材即时归档，保持苹果原生操作体验。告别手动整理，摄影师/博主/创作者素材管理效率大大提升。</div>
+                        <div class="app-meta">
+                            <span class="app-badge">免费</span>
+                            <span class="app-badge">效率</span>
+                            <span class="app-badge">支持中文</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/%E7%B4%A0%E6%9D%90%E7%9B%B8%E6%9C%BA/id6741721660" class="app-store-button" target="_blank">
+                            在 App Store 中查看
+                        </a>
                     </div>
-                    <a href="https://apps.apple.com/us/app/%E7%B4%A0%E6%9D%90%E7%9B%B8%E6%9C%BA/id6741721660" class="app-store-button" target="_blank">
-                        在 App Store 中查看
-                    </a>
                 </div>
             </div>
         </div>
