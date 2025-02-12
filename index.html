@@ -105,13 +105,14 @@
         }
 
         .app-info {
-            text-align: center;
+            text-align: left;
         }
 
         .app-name {
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 12px;
+            text-align: center;
         }
 
         .app-description {
@@ -119,17 +120,20 @@
             color: #86868b;
             line-height: 1.5;
             margin-bottom: 20px;
+            text-align: left;
             /* 限制文本行数 */
             display: -webkit-box;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            padding: 0 10px;
         }
 
         .app-meta {
             display: flex;
             gap: 12px;
             margin-bottom: 20px;
+            justify-content: center;
         }
 
         .app-badge {
@@ -141,8 +145,9 @@
         }
 
         .app-store-button {
-            display: inline-flex;
-            align-items: center;
+            margin: 0 auto;
+            display: block;
+            width: fit-content;
             background: #0071e3;
             color: white;
             padding: 8px 20px;
